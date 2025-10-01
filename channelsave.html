@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>channelblue</title>
+		<link rel="icon" type="image/x-icon" href="C:\channelcheckpoint\chBlueIcon2.ico">
+		<style>
+			.box {
+				width: 35%;
+				padding: 10px;
+				margin: 15px 0;
+				display: block;
+				outline: none;
+				border: none;
+				background-color: transparent;
+				font-family:verdana; 
+				font-size:150%;
+				color:#B4B0C9;
+			}
+			.subBox {
+				width: 4%;
+				padding: 10px;
+				margin: 15px 0;
+				display: block;
+				outline: none;
+				border: none;
+				background-color: transparent;
+				font-family:verdana; 
+				font-size:150%;
+				color:#B4B0C9;
+			}
+			.textNormal {font-family:verdana; font-size:150%;}
+			a:link {color:#B4B0C9;}
+			a:visited {color:#B4B0C9;} 
+			a:hover {color:white; background-color:#243B99;} 
+			a:active {color:#B4B0C9;} 
+			body {background-image:url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fgodotshaders.com%2Fwp-content%2Fuploads%2F2021%2F01%2FPS2_MenuShader-ezgif.com-speed-1-1.gif&f=1&nofb=1&ipt=29775ae324706d751c5a373332c6d7a04b081562129cda8a9547b3932ec449b6');
+				background-repeat: no-repeat;
+				background-attachment: fixed;
+				background-size: 100.5% 120%;
+				background-color:black; 
+				color:#B4B0C9;
+			}
+		</style>
+
+
+	</head>
+	<body>
+		<small style="font-size:375%;"><a href="C:\channelcheckpoint\save.html" target="_self">channelblue.</a></small>
+		<small>channel access</small>
+		<p>
+			<input class="box" type="text" id="inputNumber" placeholder="Channel Number" maxlength="6">
+			<button class="subBox" onclick="changeChannel();">Play</button>
+		</p>
+		<p class="textNormal">Channel Guide:</p>
+		<p class="textNormal">Test Channel: 101.10</p>
+
+		<script>
+		
+			let channelN = "";
+
+			function changeChannel() 
+				{
+					channelN = document.getElementById("inputNumber").value;
+					console.log(channelN);
+		
+					if 
+						(channelN === "101.10") 
+							{window.location.href = "channelsaveTEST.html";}
+					else
+						{alert("this channel does not exist");}		
+				}
+
+				//backround gif source: https://godotshaders.com/shader/ps2-menu/
+		</script>
+	</body>
+</html>

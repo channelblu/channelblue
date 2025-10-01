@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>channelblue</title>
+		<link rel="icon" type="image/x-icon" href="C:\channelcheckpoint\chBlueIcon2.ico">
+		<style>
+			.box {
+				width: 35%;
+				padding: 10px;
+				margin: 15px 0;
+				display: block;
+				outline: none;
+				border: none;
+				background-color: transparent;
+				font-family:verdana; 
+				font-size:150%;
+				color:#B4B0C9;
+			}
+			.noteBox {
+				width: 99%;
+				padding: 10px;
+				margin: 15px 0;
+				display: block;
+				outline: none;
+				border: none;
+				background-color: transparent;
+				font-family:verdana; 
+				font-size:150%;
+				color:#B4B0C9;
+			}
+			.subBox {
+				width: 10%;
+				padding: 10px;
+				margin: 15px 0;
+				display: block;
+				outline: none;
+				border: none;
+				background-color: transparent;
+				font-family:verdana; 
+				font-size:150%;
+				color:#B4B0C9;
+			}
+			a:link {color:#B4B0C9;}
+			a:visited {color:#B4B0C9;} 
+			a:hover {color:white; background-color:#243B99;} 			
+			a:active {color:#B4B0C9;} 
+			body {background-image:url('https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F1.bp.blogspot.com%2F-f-QteGJOUFo%2FUZ9x3CRzbeI%2FAAAAAAAAAJA%2FYBi7QN4AFis%2Fs1600%2Fguardar%2Bpunto.gif&f=1&nofb=1&ipt=ea683a47bf539b480d1209e2e1564fa5fd0b691a0b8f14ffc724ba4855ce3ad6');
+				background-repeat: no-repeat;
+				background-attachment: fixed;
+				background-size: 100% 100%;
+				background-color:black; color:#B4B0C9;
+			}
+		</style>
+		
+	</head>
+	<body>
+		<small style="font-size:375%;"><a href="C:\channelcheckpoint\save.html" target="_self">channelblue.</a></small>
+		<small>file save</small>
+		
+		<p>
+			<form id="myForm">
+				<p class="box" id="userInput1"></p>
+				<input class="box" type="text" id="userInput2" placeholder="File Name" maxlength="30">
+				<input class="box" type="text" id="userInput3" placeholder="Current Main Quest" maxlength="60">
+				<input class="box" type="text" id="userInput4" placeholder="Current Side Quest" maxlength="60">
+				<textarea class="noteBox" id="userInput5" placeholder="Note Entry (max 300 characters)" rows="3" maxlength="300"></textarea>
+				<p class="box">Would you like to save your progress?</p>
+				<p class="subBox"><a href="C:\channelcheckpoint\save.html" target="_self" type="button" onclick="saveFile();">Save File</a></p>
+				<p class="subBox"><a href="C:\channelcheckpoint\save.html" target="_self" type="button" onclick="eraseFile();">Erase File</a></p>
+			</form>
+		</p>
+
+		<script>
+			let date = new Date();
+			let userN; 
+			let mainQ;
+			let sideQ;
+			let noteE;
+			document.getElementById("userInput1").innerHTML = date.toDateString();
+
+			function saveFile() {
+				localStorage.setItem("filePt1", date.toDateString());
+				userN = document.getElementById('userInput2').value; 
+				localStorage.setItem("filePt2", userN);
+				mainQ = document.getElementById('userInput3').value;
+				localStorage.setItem("filePt3", mainQ);
+				sideQ = document.getElementById('userInput4').value;
+				localStorage.setItem("filePt4", sideQ);
+				noteE = document.getElementById('userInput5').value;
+				localStorage.setItem("filePt5", noteE);
+			}
+			
+			function eraseFile() {
+			localStorage.removeItem("filePt1");
+			localStorage.removeItem("filePt2");
+			localStorage.removeItem("filePt3");
+			localStorage.removeItem("filePt4");
+			localStorage.removeItem("filePt5");
+			}
+						
+			//let names = 'name'
+			//let name2 = ' example' this is combining name variables example
+			//let finalName = `${names}` + `${name2}` + `thingy`
+			//console.log(finalName)
+			
+		</script>
+	</body>
+		
+	<!--
+		
+	-->
+
+
+</html>

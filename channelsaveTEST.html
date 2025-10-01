@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>channelblue</title>
+		<link rel="icon" type="image/x-icon" href="C:\channelcheckpoint\chBlueIcon2.ico">
+		<style>
+			.textNormal {font-family:verdana; font-size:150%;}
+			a:link {color:#B4B0C9;}
+			a:visited {color:#B4B0C9;} 
+			a:hover {color:white; background-color:#243B99;} 
+			a:active {color:#B4B0C9;} 
+			body {background-color:black; color:#B4B0C9;}
+      .vidCenter {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+      }
+		</style>
+	</head>
+	
+	<body>
+		<small style="font-size:375%;"><a href="C:\channelcheckpoint\save.html" target="_self">channelblue.</a></small>
+		<small>placeholder text plz</small>
+		<p class="vidCenter">
+			<video id="currentVid" style="width:1920px;height:700px;" autoplay playsinline>
+				<source id="mp4src" src="C:/channelcheckpoint/TESTchannel/intro.mp4" type="video/mp4">
+			Your browser does not support html video for some reason (idk just get a new browser)</video>
+		</p>
+		<script>
+			let vidd = document.getElementById("currentVid");
+			let vidT = 1; // 1=bump & 2&3=video
+			let bumpR;
+			let vidR;
+			
+			document.addEventListener("keydown", startPlay); //if any key is pressed, start the video
+			function startPlay() {document.getElementById("currentVid").play();}
+
+			setInterval(function() //checks is video has ended every 2 seconds
+				{
+					if 
+						(vidd.ended) 
+							{ccVidType();}
+				}, 2000);
+		
+			function ccVidType() //check & change video type (bump or video)
+				{					
+					if
+						(vidT === 1)
+							{vidT = 2; loadNextBump();}
+					else
+						{vidT = Math.floor((Math.random() * 3) + 1);
+							if
+								(vidT === 2 || 3)
+									{loadNextVid();}
+							else
+								{loadNextBump();} 
+						}
+				}
+		
+			function loadNextBump() //changes bumpR to random number, and random number determines which bump is played next
+				{
+					bumpR = Math.floor((Math.random() * 2) + 1);
+					console.log("bump number: " + `${bumpR}`);
+					if
+						(bumpR === 1)
+							{document.getElementById("mp4src").src = "C:/channelcheckpoint/TESTchannel/bump1.mp4";
+							document.getElementById("currentVid").load();}
+					else if
+						(bumpR === 2)
+							{document.getElementById("mp4src").src = "C:/channelcheckpoint/TESTchannel/bump2.mp4";
+							document.getElementById("currentVid").load();}
+				}
+		
+			function loadNextVid() //changes vidR to random number, and random number determines which video is played next
+				{
+					vidR = Math.floor((Math.random() * 2) + 1);
+					console.log("vid number: " + `${vidR}`);
+					if
+						(vidR === 1)
+							{document.getElementById("mp4src").src = "C:/channelcheckpoint/TESTchannel/vid1.mp4";
+							document.getElementById("currentVid").load();}
+					else if
+						(vidR === 2)
+							{document.getElementById("mp4src").src = "C:/channelcheckpoint/TESTchannel/vid2.mp4";
+							document.getElementById("currentVid").load();}
+				}
+		</script>
+	</body>
+</html>

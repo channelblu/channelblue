@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>channelblue</title>
+		<link rel="icon" type="image/x-icon" href="C:\channelcheckpoint\chBlueIcon2.ico">
+		<style>
+			.buttons {font-family:verdana; font-size:150%;} 
+			a:link {color:#B4B0C9;}
+			a:visited {color:#B4B0C9;} 
+			a:hover {color:white; background-color:#243B99;} 
+			a:active {color:#B4B0C9;} 
+			body {background-color:black; color:#B4B0C9;}
+		</style>
+	</head>
+	
+	<body>
+		<small style="font-size:375%;">channelblue.</small>
+		<small id="messageThingy"></small>
+		
+		<p class="buttons"><a href="C:\channelcheckpoint\filesave.html" target="_self">Save Your Progress</a></p>
+		<p class="buttons"><a href="C:\channelcheckpoint\channelsave.html" target="_self">Access Channels</a></p>
+		<p class="buttons"><a href="C:\channelcheckpoint\participatesave.html" target="_self">Participate</a></p>
+		<p class="buttons"><a href="C:\channelcheckpoint\infosave.html" target="_self">Info</a></p>
+				
+		<p>__________________________________________________</p>
+		<p class="buttons">Previous Save File:</p>
+		<p class="buttons" id="fileInfo1"></p>
+		<p class="buttons" id="fileInfo2"></p>
+		<p class="buttons" id="fileInfo3"></p>
+		<p class="buttons" id="fileInfo4"></p>
+		<p class="buttons" id="fileInfo5"></p>
+
+		<script>
+			
+			function presentQuote() 
+			{
+				const quoteR = Math.floor((Math.random() * 77) + 1);
+				console.log(quoteR);
+				let quote = "placeholder text plz";
+				if 
+					(quoteR === 1) 
+						{quote = "a place to get away from it all";}
+				else if
+					(quoteR === 2)
+						{quote = "an internet checkpoint";}
+				else if
+					(quoteR === 3)
+						{quote = "future you is talking shit on you";}
+				else if
+					(quoteR === 4)
+						{quote = "what the fuck is good source code";}
+				else if
+					(quoteR === 5)
+						{quote = "fortnite";}
+				else if
+					(quoteR === 6)
+						{quote = "its free!!!";}
+				else if
+					(quoteR === 7)
+						{quote = "my favorite shit is a bright blue shirt that just says: Liver Shot";}
+				else if
+					(quoteR === 8)
+						{quote = ":P";}
+				else if
+					(quoteR === 9)
+						{quote = "its youtube but better";}
+				else if
+					(quoteR === 10)
+						{quote = "im a shitty developer so if smth dont work its prolly my fault";}
+				else if
+					(quoteR === 11)
+						{quote = "level up your character stats here";}
+				else if
+					(quoteR === 12)
+						{quote = "so what's your SPECIAL stats? i think i accidentally put my charisma at 1";}
+				else if
+					(quoteR === 13)
+						{quote = "like a cigarette break but the only health problems youll get is your shrimp posture";}
+				else if
+					(quoteR === 14)
+						{quote = "the dead internet theory is real, youre safe from it here dw";}
+				else if
+					(quoteR === 15)
+						{quote = "no ai here, becasue ai for bitches";}
+				else if
+					(quoteR === 16)
+						{quote = "im actually a wizard";}
+				else if
+					(quoteR === 17)
+						{quote = "fuck you spider man";}
+				else if
+					(quoteR === 18)
+						{quote = "i dont get any money from this, i dont monitize it because im just a really really nice person";}
+				else if
+					(quoteR === 19)
+						{quote = "liver shot";}
+				else if
+					(quoteR === 20)
+						{quote = "what are ya buyin?";}
+				else if
+					(quoteR === 21)
+						{quote = "no ads, no accounts, no cookies or whatever, just a poorily written website to chill on";}
+				else if
+					(quoteR === 22)
+						{quote = "its financing ;)";}
+				else if
+					(quoteR === 23)
+						{quote = "bitch";}
+				else if
+					(quoteR === 24)
+						{quote = "yeah bitch magnets";}
+				else if
+					(quoteR === 25)
+						{quote = "shameless plug: @wehttaM_711 instagram :P";}
+				else if
+					(quoteR === 26)
+						{quote = "so hows your day?";}
+				else if
+					(quoteR === 27)
+						{quote = "one time i bought a magazine about architecture, and i have not touched it since i bought it";}
+				else if
+					(quoteR === 28)
+						{quote = "thanks for visiting";}
+				else if
+					(quoteR === 29)
+						{quote = "stay a while, have a drink";}
+				else if
+					(quoteR === 30)
+						{quote = "i think i might be color blind";}
+				else if
+					(quoteR === 31)
+						{quote = "yes yes i know the font isnt blue it was 100% 'artistically' intentional and definitely wasnt a mistake when typing the color code and was too lazy to change it";}
+				else if
+					(quoteR === 32)
+						{quote = "in your restless dreams, you see that website, oh wait you aint dreaming its just the insomnia";}
+				else if
+					(quoteR === 33)
+						{quote = "life is a dark souls game and this is your bonfire";}
+				else if
+					(quoteR === 34)
+						{quote = "the type of site to explore on a late school/work night";}
+				else if
+					(quoteR === 35)
+						{quote = "a safe place for the chronically online";}
+				else if
+					(quoteR === 36)
+						{quote = "open 24 hours";}
+				else if
+					(quoteR === 37)
+						{quote = "oh yeah";}
+				else if
+					(quoteR === 38)
+						{quote = "frank ocean please drop again blonde was really really gud maybe even the greatest please man just one more album if you drop one more album i wont ever ask for anything ever again please big dawg like i love channel orange and blonde hell i even took inspiration from it (channelblue) but like i need a new album or ill even take endless on streaming pretty please with a cherry on top";}
+				else if
+					(quoteR === 39)
+						{quote = "baby's got the bends";}
+				else if
+					(quoteR === 40)
+						{quote = "the street heats the urgency of now, as you see there's no one around";}
+				else if
+					(quoteR === 41)
+						{quote = "this is not my life its just a fond farewell to a friend";}
+				else if
+					(quoteR === 42)
+						{quote = "hope you enjoy because this is the result of not paying attention in your college classes and working on a dumbass website a few months straight";}
+				else if
+					(quoteR === 43)
+						{quote = "nobody broke your heart, if you're alone it must be you that wants to be apart";}
+				else if
+					(quoteR === 44)
+						{quote = "can i waste all your time here on the sidewalk";}
+				else if
+					(quoteR === 45)
+						{quote = "you ever cooked half a brick in the air fryer";}
+				else if
+					(quoteR === 46)
+						{quote = "only love is all maroon";}
+				else if
+					(quoteR === 47)
+						{quote = "you could have the world in the palm of your hands you still might drop it";}
+				else if
+					(quoteR === 48)
+						{quote = "yesterday's headlines blown by the wind, yesterday's people in a scatterbrain";}
+				else if
+					(quoteR === 49)
+						{quote = "when's the last time you took a little time for yourself";}
+				else if
+					(quoteR === 50)
+						{quote = "dream of californication";}
+				else if
+					(quoteR === 51)
+						{quote = "and then on day you find, ten years have got behind you, no one told you whe nto run, you missed the starting gun";}
+				else if
+					(quoteR === 52)
+						{quote = "she's got the whole wide world in her hand";}
+				else if
+					(quoteR === 53)
+						{quote = "he's got the whole wide world in his hands";}
+				else if
+					(quoteR === 54)
+						{quote = "life's just around the bend my friend";}
+				else if
+					(quoteR === 55)
+						{quote = "how far is a lightyear? a second";}
+				else if
+					(quoteR === 56)
+						{quote = "pretty sweet";}
+				else if
+					(quoteR === 57)
+						{quote = "just one more time i've got to know, how you came to blow my mind";}
+				else if
+					(quoteR === 58)
+						{quote = "hey little apple blossom, what seems to be the problem?";}
+				else if
+					(quoteR === 59)
+						{quote = "and i'm never gonna dance again, guilty feel i got no rythym";}
+				else if
+					(quoteR === 60)
+						{quote = "life's a bummer when you're a hummer";}
+				else if
+					(quoteR === 61)
+						{quote = "right at the door";}
+				else if
+					(quoteR === 62)
+						{quote = "dedicated to all you, all human beings";}
+				else if
+					(quoteR === 63)
+						{quote = "blame it on the black star";}
+				else if
+					(quoteR === 64)
+						{quote = "parched land, no desert sand, sun is just a dot";}
+				else if
+					(quoteR === 65)
+						{quote = "riders on the storm";}
+				else if
+					(quoteR === 66)
+						{quote = "what's the story morning glory?";}
+				else if
+					(quoteR === 67)
+						{quote = "silent running";}
+				else if
+					(quoteR === 68)
+						{quote = "interstellar is the best christopher nolan movie change my mind"}
+				else if
+					(quoteR === 69)
+						{quote = "inspect element and go to the 'console' tab for a suprise"}
+				else if
+					(quoteR === 70)
+						{quote = "like fight club but without the fights, or the clubs, or the terrorist organizations"}
+				else if
+					(quoteR === 71)
+						{quote = "i really enjoy climbing despite my immense fear of heights and falling"}
+				else if
+					(quoteR === 72)
+						{quote = "if you live in a small town go check out the downtown alleyways, yes there's the occasional crackhead but eventually you'll find hidden gems of chill spots and rooftops"}
+				else if
+					(quoteR === 73)
+						{quote = "one time a buddy pressured me into buying a $250 jacket that kinda looked like the leon re4 jacket, winter is now one of my favorite times of the year because i can wear it and it makes me feel like i got that shit on even tho its just a goofy lookin jacket"}
+				else if
+					(quoteR === 74)
+						{quote = "go to sleep"}
+				else if
+					(quoteR === 75)
+						{quote = "the dawn is your enemy"}
+				else if
+					(quoteR === 76)
+						{quote = "it was all a blur"}
+				else if
+					(quoteR === 77)
+						{quote = "a black computer screen could also be used as a mirror to reflect on one self"}
+				else
+					{quote = "placeholder text plz"}
+				document.getElementById("messageThingy").innerHTML = quote;
+			}
+			
+			function presentFile() 
+			{
+				let fileDate = localStorage.getItem("filePt1");
+				let fileName = localStorage.getItem("filePt2");
+				let fileMain = localStorage.getItem("filePt3");
+				let fileSide = localStorage.getItem("filePt4");
+				let fileNote = localStorage.getItem("filePt5");
+				document.getElementById("fileInfo1").innerHTML = "Date: " + fileDate;
+				document.getElementById("fileInfo2").innerHTML = "File Name: " + fileName;
+				document.getElementById("fileInfo3").innerHTML = "Main Quest: " + fileMain;
+				document.getElementById("fileInfo4").innerHTML = "Side Quest: " + fileSide;
+				document.getElementById("fileInfo5").innerHTML = "Note Entry: " + fileNote;
+			}
+			
+			presentFile();
+			presentQuote();
+			//i have no fucking clue why but the functions only work if theyre in order like this dont chant nothing mat you retard, anyways stay safe big dawg - past mat :P
+		</script>
+	</body>
+	
+	
+</html>
+
+
