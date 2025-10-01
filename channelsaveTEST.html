@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<title>channelblue</title>
-		<link rel="icon" type="image/x-icon" href="C:\channelcheckpoint\chBlueIcon2.ico">
+		<link rel="icon" type="image/x-icon" href="chBlueIcon2.ico">
 		<style>
 			.textNormal {font-family:verdana; font-size:150%;}
 			a:link {color:#B4B0C9;}
@@ -19,11 +19,11 @@
 	</head>
 	
 	<body>
-		<small style="font-size:375%;"><a href="C:\channelcheckpoint\save.html" target="_self">channelblue.</a></small>
+		<small style="font-size:375%;"><a href="save.html" target="_self">channelblue.</a></small>
 		<small>placeholder text plz</small>
 		<p class="vidCenter">
 			<video id="currentVid" style="width:1920px;height:700px;" autoplay playsinline>
-				<source id="mp4src" src="C:/channelcheckpoint/TESTchannel/intro.mp4" type="video/mp4">
+				<source id="mp4src" src="TESTchannel/intro.mp4" type="video/mp4">
 			Your browser does not support html video for some reason (idk just get a new browser)</video>
 		</p>
 		<script>
@@ -63,11 +63,11 @@
 					console.log("bump number: " + `${bumpR}`);
 					if
 						(bumpR === 1)
-							{document.getElementById("mp4src").src = "C:/channelcheckpoint/TESTchannel/bump1.mp4";
+							{document.getElementById("mp4src").src = "TESTchannel/bump1.mp4";
 							document.getElementById("currentVid").load();}
 					else if
 						(bumpR === 2)
-							{document.getElementById("mp4src").src = "C:/channelcheckpoint/TESTchannel/bump2.mp4";
+							{document.getElementById("mp4src").src = "TESTchannel/bump2.mp4";
 							document.getElementById("currentVid").load();}
 				}
 		
@@ -77,13 +77,14 @@
 					console.log("vid number: " + `${vidR}`);
 					if
 						(vidR === 1)
-							{document.getElementById("mp4src").src = "C:/channelcheckpoint/TESTchannel/vid1.mp4";
+							{document.getElementById("mp4src").src = "TESTchannel/vid1.mp4";
 							document.getElementById("currentVid").load();}
 					else if
 						(vidR === 2)
-							{document.getElementById("mp4src").src = "C:/channelcheckpoint/TESTchannel/vid2.mp4";
+							{document.getElementById("mp4src").src = "TESTchannel/vid2.mp4";
 							document.getElementById("currentVid").load();}
 				}
 		</script>
 	</body>
+
 </html>
