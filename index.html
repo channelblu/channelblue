@@ -36,7 +36,7 @@
 			
 			function presentQuote() 
 			{
-				const quoteR = Math.floor((Math.random() * 77) + 1);
+				const quoteR = Math.floor((Math.random() * 80) + 1);
 				console.log(quoteR);
 				let quote = "placeholder text plz";
 				if 
@@ -269,7 +269,16 @@
 						{quote = "it was all a blur"}
 				else if
 					(quoteR === 77)
-						{quote = "a black computer screen could also be used as a mirror to reflect on one self"}
+						{quote = "stop your life and start it up again"}
+				else if
+					(quoteR === 78)
+						{quote = "and it was all a dream"}
+				else if
+					(quoteR === 79)
+						{quote = "wowzers"}
+				else if
+					(quoteR === 80)
+						{quote = "why do you have the music so loud? so i don't have to think"}
 				else
 					{quote = "placeholder text plz"}
 				document.getElementById("messageThingy").innerHTML = quote;
@@ -297,6 +306,7 @@
 	
 	
 </html>
+
 
 
 
